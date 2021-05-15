@@ -1,0 +1,15 @@
+.myname {
+  color: Red;
+}
+
+.heading {
+  color: chartreuse;
+  font-weight: bold;
+  text-align: center;
+}
+
+.list {
+  list-style-type: circle;
+  list-style-position: inside;
+  color: maroon;
+}

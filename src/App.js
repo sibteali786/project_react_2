@@ -1,27 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Hello from "./Hello";
 
-function App() {
+function App({ name, age }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <br />
-          Updated By Sibteali
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      Hello From App.js. My Name is <strong>{name}</strong> and Age = {age - 4}
+      <br />
+      <Hello firstname={name}></Hello>
+      <br />
+      <h1 className="heading"> Assigment React Basic</h1>
+      <ol className="list">
+        <li>Html</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+      </ol>
     </div>
   );
+  // We can only return a single independent tag or a tree of tags
+  /* All properties passsed in the React.DOm renderer in index.js comes in function paramters as first argument */
 }
 
 export default App;
